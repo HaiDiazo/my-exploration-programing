@@ -1,11 +1,11 @@
 # My Exploration Programming
-##[Java Developer]
+## [Java Developer]
 - Java Dasar
 - Java Collection
 - Dependency Management (Maven, Gradle)
 - Spring Framework
 
-##[Python Developer]
+## [Python Developer]
 - Python Dasar
 - Beautifulsoup
 - Selenium
