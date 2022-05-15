@@ -5,6 +5,10 @@
  */
 package arrraynama;
 
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+
 /**
  *
  * @author Mr Nathan
@@ -14,18 +18,37 @@ public class ArrayListPush {
     /**
      * @param args the command line arguments
      */
-    public static String[] pushArr(int n)
+    public static String[] pushArr(int n, String[] arr, String val)
     {
-        String[] newArr = new String[n + 1];
+        ArrayList<String> arrayList = new ArrayList<String>();
         
+        for(String a: arr)
+            arrayList.add(a);
         
-        return new;
+        arrayList.add(val);
+        
+        arr = arrayList.toArray(arr);
+        
+        return arr;
     }
     
     
     public static void main(String[] args) {
         // TODO code application logic here
         
+        String[] nama = {"Nathan", "Aptanta", "Parama"};
+        String push;
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println(Arrays.toString(nama));
+        
+        System.out.print("Silahkan masukan nama: ");
+        push = input.nextLine();
+        
+        nama = pushArr(nama.length, nama, push);
+        
+        System.out.println(Arrays.toString(nama));
         
     }
     
