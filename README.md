@@ -1,6 +1,6 @@
 # My Exploration Programming
 ## [Java Developer]
-- Java Dasar, -> [Klik Here](https://github.com/HaiDiazo/my-exploration-programing/tree/java_dasar)
+- Java Dasar [klik here](https://github.com/HaiDiazo/my-exploration-programing/tree/java_dasar)
 - Java Collection
 - Dependency Management (Maven, Gradle)
 - Spring Framework
