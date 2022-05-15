@@ -22,12 +22,13 @@ public class ArrrayNama {
 //        Inisialisasi
         String[] nama = {"Nathan", "Donat", "Natadecoco"};
         
-//        Buat Objek 
-        Scanner input = new Scanner(System.in);
-        
         System.out.println(Arrays.toString(nama));
         
+//        Change name
+        nama[2] = "Joko";
+        
         System.out.println("\nPrint Out dengan Foreach:");
+        
         for(String n: nama)
         {
             System.out.println(n); 

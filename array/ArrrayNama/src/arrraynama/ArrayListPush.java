@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package arrraynama;
+
+/**
+ *
+ * @author Mr Nathan
+ */
+public class ArrayListPush {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static String[] pushArr(int n)
+    {
+        String[] newArr = new String[n + 1];
+        
+        
+        return new;
+    }
+    
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        
+    }
+    
+}
