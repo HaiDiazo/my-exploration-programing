@@ -18,6 +18,24 @@ public class CaseThree {
     /**
      * @param args the command line arguments
      */
+    public static String[][] pushArr(String[][] arr,int size, String buah, int jum)
+    {
+        String[][] newArr = new String[size + 1][2];
+        
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                newArr[i][j] = arr[i][j];
+            }
+        }
+        
+        
+        newArr[size][0] = buah;
+        newArr[size][1] = Integer.toString(jum);
+        
+        return newArr;
+    }
+    
+    
     public static void main(String[] args) {
         // TODO code application logic here
         
@@ -31,33 +49,32 @@ public class CaseThree {
         String[] buah = {"apel", "mangga", "Durian", "Mangga", "Apel", "MANGGA"};
         String[][] tempBuah = {};
         int cek,k;
+        k = 0;
         
         for (int i = 0; i < buah.length; i++) {
             cek = 0;
-            k = 0;
             
             for (int j = 0; j < buah.length; j++) {
-                if (buah[i].toLowerCase() == buah[j].toLowerCase()) {
+                if (buah[i].toLowerCase().equals(buah[j].toLowerCase())) {
                     cek++;
                 }
             }
             
             if (cek > 1) {
-                if (!(tempBuah.length > 0)) {
-                    tempBuah[k][0] = buah[i];
-                    tempBuah[k][1] = Integer.toString(cek);
-                }else{
-                    int cek2 = 0;
-                    for (int j = 0; j < tempBuah.length; j++) {
-                        if (buah[i] != tempBuah[j][0]) {
-                            // Apa yang terjadi klo buah buah tidak sama di temporary?
-                            // ingin klo tidak sama input ke db
-                            
-                        }
-                    }
-                    
+                
+                if (tempBuah.length == 0) {
+                tempBuah = pushArr(tempBuah, tempBuah.length, buah[i].toLowerCase(), cek);    
                 }
+                
+                
+                k++;
             }
+
+        }
+       
+        System.out.println("Output:");
+        for (int i = 0; i < tempBuah.length; i++) {
+            System.out.println(tempBuah[i][0]+ " "+ tempBuah[i][1]);
         }
         
         
