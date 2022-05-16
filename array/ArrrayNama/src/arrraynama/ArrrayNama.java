@@ -25,7 +25,7 @@ public class ArrrayNama {
         System.out.println(Arrays.toString(nama));
         
 //        Change name
-        nama[2] = "Joko";
+        nama[4] = "Joko";
         
         System.out.println("\nPrint Out dengan Foreach:");
         
