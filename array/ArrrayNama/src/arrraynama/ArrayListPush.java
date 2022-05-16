@@ -79,7 +79,7 @@ public class ArrayListPush {
                 System.out.println(Arrays.toString(pullArr(nama.length, nama)));
                 break;
             case "no":
-                
+                System.out.println("Terimakasih!");
                 break;
             default:
                 System.out.println("Tidak ada pilihan yang diketik");
