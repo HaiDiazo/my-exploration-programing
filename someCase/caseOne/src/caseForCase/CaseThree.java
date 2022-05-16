@@ -28,9 +28,37 @@ public class CaseThree {
             }
         }
         
-        
         newArr[size][0] = buah;
         newArr[size][1] = Integer.toString(jum);
+        
+        // Bubble sort
+        if (newArr.length > 1) {
+            for (int i = 0; i < newArr.length; i++) {
+                String[][] tempArr = new String[1][2];
+                
+                if (i < newArr.length - 1) {
+                    
+                    // Insialisasi angka
+                    int a = Integer.parseInt(newArr[i][1]);
+                    int b = Integer.parseInt(newArr[i+1][1]);
+                    
+                    // Process BubbleSort
+                    if (a < b) {
+                        // save to temp
+                        tempArr[0][0] = newArr[i][0];
+                        tempArr[0][1] = newArr[i][1];
+                        
+                        // gantian dari no 2 ke 1
+                        newArr[i][0] = newArr[i+1][0];
+                        newArr[i][1] = newArr[i+1][1];
+                        
+                        newArr[i+1][0] = tempArr[0][0];
+                        newArr[i+1][1] = tempArr[0][1];
+                    }
+                }
+            }
+            
+        }
         
         return newArr;
     }
@@ -63,10 +91,20 @@ public class CaseThree {
             if (cek > 1) {
                 
                 if (tempBuah.length == 0) {
-                tempBuah = pushArr(tempBuah, tempBuah.length, buah[i].toLowerCase(), cek);    
+                    tempBuah = pushArr(tempBuah, tempBuah.length, buah[i].toLowerCase(), cek);    
+                }else{
+                    int cek2 = 0;
+                    
+                    for (int j = 0; j < tempBuah.length; j++) {
+                        if (buah[i].toLowerCase().equals(tempBuah[j][0])) {
+                            cek2++;
+                        }
+                    }
+                    
+                    if (cek2 == 0) {
+                        tempBuah = pushArr(tempBuah, tempBuah.length, buah[i].toLowerCase(), cek);
+                    }
                 }
-                
-                
                 k++;
             }
 
