@@ -1,5 +1,5 @@
 # My Exploration Programming
-This is my Exploration Programming using java.
+This is my Exploration Programming using java. You can switch into branch or klik link in below.
 
 ## [Java Developer]
 - Java Dasar [klik here](https://github.com/HaiDiazo/my-exploration-programing/tree/java_dasar)
