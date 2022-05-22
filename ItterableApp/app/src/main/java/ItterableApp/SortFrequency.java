@@ -21,7 +21,7 @@ import java.util.TreeSet;
  */
 public class SortFrequency {
     public static void main(String[] args){
-        String[] buah = {"apel", "durian" ,"Mangga", "Apel", "MANGGA", "mangga", "anggur", "anggur","anggur","anggur"};
+        String[] buah = {"apel", "durian", "durian" ,"Mangga", "Apel", "MANGGA", "mangga", "anggur", "anggur","anggur","anggur"};
         
         Map<String, Integer> buah1 = new HashMap<>();
         
@@ -35,11 +35,14 @@ public class SortFrequency {
         
         System.out.println(buah1);
         
-        SortedSet<Buah> al = new TreeSet<>(new BuahComparator());
-//        List<Buah> al = new ArrayList<Buah>();
+//        SortedSet<Buah> al = new TreeSet<>(new BuahComparator());
+        List<Buah> al = new ArrayList<Buah>();
         for(Map.Entry<String, Integer> t : buah1.entrySet()) {
             al.add(new Buah(t.getValue(), t.getKey()));
         }
+        
+        al.sort(new BuahComparator());
+        
         
         for (Buah buah2 : al) {
             System.out.println(buah2.getNamaBuah() + " " + buah2.getCount());    
