@@ -4,7 +4,7 @@ This is my Exploration Programming using java. You can switch into branch or kli
 ## [Java Developer]
 - Java Dasar [klik here](https://github.com/HaiDiazo/my-exploration-programing/tree/java_dasar)
 - Java Collection [Klik here](https://github.com/HaiDiazo/my-exploration-programing/tree/java_collection)
-- Dependency Management (Maven, Gradle)
+- Dependency Management (Maven, Gradle) [Klik here](https://github.com/HaiDiazo/my-exploration-programing/tree/dependency_management)
 - Spring Framework
 
 ## [Python Developer]
