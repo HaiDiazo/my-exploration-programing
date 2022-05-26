@@ -1,0 +1,13 @@
+package cobabuatrestapi.belajarspringdanrestapi;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class BelajarSpringDanRestapiApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
