@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RestController
 public class ProductController {
 
     @Autowired
@@ -29,13 +30,13 @@ public class ProductController {
         return service.getProducts();
     }
 
-    @GetMapping("/product/{id}")
+    @GetMapping("/productById/{id}")
     public Product findProductById(@PathVariable int id)
     {
         return service.getProductById(id);
     }
 
-    @GetMapping("/product/{name}")
+    @GetMapping("/productByName/{name}")
     public Product findProductByName(@PathVariable String name)
     {
         return service.getProductByName(name);
