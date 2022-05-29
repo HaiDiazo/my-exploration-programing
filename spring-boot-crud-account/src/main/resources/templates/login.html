@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>title here</title>
+</head>
+<body>
+<h1>Welcome to Home Page</h1>
+    <form action="#" th:action="@{/login}" th:object="${user}" method="post">
+        <input type="text" th:field="*{username}" class="form-control">
+        <input type="text" th:field="*{password}" class="form-control">
+        <button type="submit">login</button>
+    </form>
+</body>
+</html>
