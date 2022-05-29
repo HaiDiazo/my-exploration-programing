@@ -12,3 +12,8 @@ pada MySQL yaitu UPDATE, INSERT, DELETE.
 - statement.executeQuery(String sql) -> digunakan untuk mengeksekusi perintah SQL yang memberikan output data
 Pada fungsi ini harus menggunakan ResultSet resultSet = statement.executeQuery(sql) yang dapat dilihat contoh script [Disini](https://github.com/HaiDiazo/my-exploration-programing/blob/dependency_management/database_with_apache_maven/java-database/src/test/java/explore/programing/java/database/StatementTest.java);
 
+## Website untuk cari dependency
+[maven search](https://search.maven.org/)
+[maven repository](https://mvnrepository.com/)
+
+
